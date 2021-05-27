@@ -1,0 +1,558 @@
+body{
+    height: 6000px;
+}
+.back-to-position{
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position .to-right{
+    transform: translateX(-150px);
+}
+.back-to-position .to-left{
+    transform: translateX(150px);
+}
+.show .back-to-position{
+    opacity: 1;
+    transform: translateX(0);
+}
+.show .back-to-position.delay-0{
+    transition-delay: 0s;
+}
+.show .back-to-position.delay-1{
+  transition-delay: .3s;  
+}
+.show .back-to-position.delay-2{
+    transition-delay: .6s;
+}
+.show .back-to-position.delay-3{
+    transition-delay: .9s;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+   z-index: 9;
+    background-color: #F6F5F0;
+    border-bottom: 1px solid #c8c8c8;
+    
+    
+}
+ul{
+    list-style: none;
+}
+.btn{
+    border: 2px solid #333;
+    width: 130px;
+    padding: 10px;
+    border-radius: 4px;
+    color:#333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+}
+.inner{
+    width: 1200px;
+    margin: auto;
+    height: 120px;
+  
+    position: relative;
+}
+.logo{
+    top:20px;
+    height: 20px;
+    margin: auto 0;
+    position: absolute;
+}
+header .main-menu{
+    display: flex;
+    right: 0px;
+   bottom: 0px;
+   position: absolute;
+}
+header .main-menu .menu{
+    
+}
+header .main-menu .menu-name:hover{
+    
+}
+header .main-menu .menu-name .menu-contents{
+   
+}
+header .main-menu .menu-name:hover .contents-menu{
+    
+    display: block;
+}
+
+header .main-menu .menu-name .contents-menu{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    height: 200px;
+    display: none;
+}
+/* visual */
+.visual {
+    margin-top: 100px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../images/visual_bg.jpg");
+    
+    position: center;
+}
+.visual .inner{
+  height: 700px;
+}
+.visual .title{
+    position: absolute;
+    top: 100px;
+    left: -10px;
+}
+.visual .title .btn {
+    position: absolute;
+    top: 259px;
+    left: 173px;
+    border: 1px solid black;
+    background-color: black;
+}
+.visual .cup1-image{
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+.visual .cup1-title{
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+.notice{
+   
+}
+.notice .inner{
+    display: flex;
+}
+
+.notice .inner .left-img .swiper-container{
+    background-image: url('../images/find_store_picture1.jpg');
+    width: 50%;
+    height: 300px;
+    border: 0;
+    background-repeat: no-repeat;
+}
+.notice .inner .left-img .swiper-container{
+    background-color: orange;
+    flex-grow: 1;
+}
+.notice .inner .left-img .notice-line__more{
+
+}
+.notice .inner .left-img .notice-line__more .materialicons{
+    color: #fff;
+    font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;}
+.notice .inner .right-img {
+    
+    width: 500px;
+    height: 300px;
+    border: 0;
+    background-repeat: no-repeat;
+
+}
+.notice .inner .right-img .toggle-promotion{
+
+}
+.notice .inner .right-img .toggle-promotion .materialcons{
+
+}
+.notice .faidin{
+    opacity: 0;
+}
+header .ranking{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+header .ranking:hover{
+    transform: scale(1.7);
+}
+header .ranking .swiper-container{
+    background-color: greenyellow;
+    flex-grow: 1;
+    font-size: 20px;
+    height: 32px;
+}
+.visual .promotion{
+    height: 693px;
+    background-color: white;
+    position: relative;
+    transition: height.4s;
+    overflow: hidden;
+
+}
+.visual .promotion .swiper-container{
+    width: 2477px;
+    height: 553px;
+    background-color: orange;
+   
+    position: absolute;
+    top: 40px;
+    /* 정가운데로 하기위한 */
+    left: 50%;
+    margin-left: -1238.5px;
+}
+/* 활성화 하는 가운데 요소 스타일처리 */
+
+.visual .promotion .swiper-slide{
+    opacity: .5;
+    transition: opacity 1s;
+    position: relative;
+}
+.visual .promotion .swiper-slide-active{
+    opacity: 1;
+ }
+ .visual .promotion .swiper-slide .btn{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 130px;
+    margin: auto;
+    }
+    .visual .promotion .swiper-pagination{
+        bottom: 40px;
+        left: 0;
+        right: 0;
+      
+        /* swiper -pagination 포지션값이 있음 */
+    }
+    .visual .promotion .swiper-pagination .swiper-pagination-bullet {
+        background-color: transparent;
+        background-image: url("../images/promotion_slide_pager.png");
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+        
+        outline: none;
+    }
+    .visual .promotion .swiper-pagination .swiper-pagination-bullet:last-child{
+
+        margin-right: 0px;
+    }
+    .visual .promotion .swiper-pagination .swiper-pagination-bullet-active{
+        background-image: url('../images/promotion_slide_pager_on.png');
+    }
+.visual .promotion .swiper-prev,
+.visual .promotion .swiper-next{
+        width: 42px;
+        height: 42px;
+        border: 2px solid #333;
+        border-radius: 50%;
+        top: 300px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* .visual .promotion .swiper-next{
+        width: 42px;
+        height: 42px;
+        border: 2px solid #333;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+    }    */
+    .visual .promotion .swiper-prev{
+        left: 50%;
+        margin-left:- 480px;
+    }
+    .visual .promotion .swiper-next{
+        right: 50%;
+        margin-right:-480px;
+    }
+    .visual .promotion.hide{
+        height: 0;
+    }
+.youtube
+{
+    position: relative;
+    height: 700px;
+    background-color: #333;
+    overflow: hidden;
+}
+.youtube .youtube__area{
+    position: absolute;
+    width: 1920px;
+    background-color: orange;
+    left: 50%;
+   top: 50%;
+   margin-top: calc(1920px*9/16/-2);
+    margin-left: calc(1920px/-2);
+   
+}
+.youtube .youtube__area::before{
+    content: "";
+    display: block; /* 인라인요소라 */
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+     
+}
+
+.youtube .youtube__cover{
+ background-image: url("../images//video_cover_pattern.png");
+ background-color: rgba(0,0,0,.3);
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+#player{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.youtube .inner{
+    height: 700px;;
+     
+}
+.youtube .floating1{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.youtube .floating2{
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+
+/* seson product */
+.season-product{
+    background-image: url("../images/season_product_bg.jpg");
+
+}
+.season-product .inner{
+    height: 400px;
+}
+.season-product .text-group{
+    position: absolute;
+    top: 110px;
+    right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+
+}
+.season-product .text-group .title{
+    margin-bottom: 10px;
+}
+.season-product .text-group .description{
+    margin-bottom: 15px;
+}
+.season-product .text-group .more{
+     
+}
+.season-product .floating3{
+    position: absolute;
+    top: -200px;
+    right: 0;
+}
+
+/* reserve coffee */
+.reserve-coffee{
+    background-image: url("../images/reserve_bg.jpg");
+
+}
+.reserve-coffee .inner{
+    height: 400px;
+
+}
+.reserve-coffee .reserve-logo{  
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+.reserve-coffee .text-group{
+    position: absolute;
+    top: 124px;
+    left: 200px;
+
+}
+.reserve-coffee .product{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* pick your favorite */
+.pick-your-favorite{
+    background-image: url("../images/favorite_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.pick-your-favorite .inner{
+ height: 600px;  
+ padding: 110px;
+}
+
+.pick-your-favorite .text-group{
+    background-color: orange;
+    width: 362px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+}
+.pick-your-favorite .text-group .title{
+    margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description{
+    margin-bottom: 40px;
+}
+
+/* reserve Store */
+.reserve-store{
+    background-image: url("../images/reserve_store_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.reserve-store .inner{
+    display: flex;
+    justify-content: center; 
+    /* 수직가운데 */
+    align-items: center;
+    /* 수평가운데 */
+    height: 600px;
+}
+.reserve-store .medal
+{
+    width: 334px;
+    height: 334px;
+    perspective: 600px;
+}
+.reserve-store .medal .front,
+.reserve-store .medal .back{
+    width: 334px;
+    height: 334px;
+    backface-visibility: hidden; 
+    transition: 1s;
+    /* 뒤집어진 면 안보임 */
+}
+.reserve-store .medal .front{
+    position: absolute;
+    /* relative 안쓰는이유 우치  조정이 아닌 front back합치기위해 */
+
+}
+.reserve-store .medal:hover .front{
+    transform: rotateY(180deg);
+}
+.reserve-store .medal .back{
+    transform: rotateY(-180deg);
+}
+.reserve-store .medal:hover .back{
+    transform: rotateY(0deg);
+}
+.find-store{
+background-image: url("../images/find_store_bg.jpg");
+}
+.find-store .inner{
+    height: 400px;
+}
+.find-store .texture1{
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+.find-store .texture2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.find-store .picture{
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+
+}
+.find-store .picture1{
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+.find-store .picture2{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+.find-store .text-group{
+    position: absolute;
+    top: 129px;
+    left: 550px;
+
+}
+.find-store .text-group .title{
+    margin-bottom: 20px;
+}
+.find-store .text-group .description{
+    margin-bottom: 20px;
+}
+.awards{
+background-color: #272727;
+
+}
+.awards .inner{
+padding: 40px 0;
+}
+.awards .swiper-container{
+width: 100%;
+height: 40px;
+}
+.awards .swiper-prev,
+.awards .swiper-next{
+    width: 42px;
+    height: 42px;
+    border:2px solid #ffff;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    opacity: 30%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+.awards .swiper-prev{
+    left: -100px;
+}
+.awards .swiper-next{
+    right: -100px;
+}
+.awards .swiper-prev:hover,
+.awards .swiper-next:hover{
+    background-color: #fff;
+    color: #333;
+
+}
